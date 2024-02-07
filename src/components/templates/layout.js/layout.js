@@ -1,21 +1,11 @@
 import React from "react";
-import Proptypes from 'prop-types'
+import Header from "../../organisms/header/Header";
 
-const layout = ({ headerBar, logo, content, footer }) => {
+export default function Layout() {
     return (
         <div>
-            <section>{headerBar}</section>
-            <section>{content}</section>
-            <footer>{footer}</footer>
+            <Header/>
         </div>
         
     )
 }
-
-layout.propTypes = {
-    header: Proptypes.node.isRequired,
-    content: Proptypes.node.isRequired,
-    footer: Proptypes.node.isRequired
-}
-
-export default layout;

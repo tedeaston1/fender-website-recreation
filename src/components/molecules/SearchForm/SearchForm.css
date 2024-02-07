@@ -1,0 +1,47 @@
+.search-form{
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.search-input{
+    background-color: transparent;
+    padding: 8.5px 24px 8.5px 68px;
+    font-family: FuturaPT,sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: .8px;
+    color: #000;
+    border-radius: 100px;
+    border: 1px solid #e0e0e0;
+    height: 48px;
+    max-height: 48px;
+    width: 100%;
+}
+
+.search-form::before{
+    box-sizing: border-box;
+    background: no-repeat 0;
+    background-image: none;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44' viewBox='0 0 44 44' fill='none'%3E%3Cpath d='M29 29.8l-3.6-3.5M20.6 28c3.645 0 6.6-2.91 6.6-6.5S24.245 15 20.6 15c-3.645 0-6.6 2.91-6.6 6.5s2.955 6.5 6.6 6.5z' stroke='%23979797' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    content: "";
+    height: 44px;
+    position: absolute;
+    left: 24px;
+    top: 2px;
+    width: 44px;
+}
+
+.search-submit{
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+    width: 64px;
+    height: 46px;
+    left:0;
+    bottom:0;
+}
